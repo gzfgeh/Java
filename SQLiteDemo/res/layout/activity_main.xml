@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sqlitedemo.MainActivity" 
+    android:orientation="vertical">
+
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/insert"
+        android:text="插入"/>
+    
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/updateG"
+        android:text="更新phone num"/>
+    
+    
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/delete"
+        android:text="删除"/>
+    
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/select"
+        android:text="查找"/>
+    
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/display"
+        android:text="显示当前数据库"/>
+    
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/close"
+        android:text="关闭"/>
+    
+   <ListView 
+       	android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/listview"></ListView>
+
+</LinearLayout>
