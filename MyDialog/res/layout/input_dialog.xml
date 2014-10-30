@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_vertical|center_horizontal"
+    android:background="@drawable/dialog_bg" >
+    
+	<RelativeLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="30dip"
+	    android:paddingTop="10dip">
+	    
+	    <ImageView 	android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	        		android:layout_alignParentLeft="true"
+	        		android:id="@+id/icon"
+	        		android:background="@drawable/title"/>
+	    
+	    <TextView 	android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	        		android:id="@+id/title"
+	        		android:layout_toRightOf="@id/icon"
+	        		android:text="dialog"
+	        		android:textColor="#000000"/>
+	</RelativeLayout>
+	
+	<TextView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="1dp"
+	    android:background="@drawable/line"/>
+	
+	<TextView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/dialog_message"/>
+	
+	<EditText 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:hint="please input content"
+	    android:id="@+id/input"
+	    android:textColor="#00FF00"/>
+	
+	<RelativeLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content">
+	    
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/sure"
+	        android:text="sure"/>
+	    
+	    <Button 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/cancle"
+	        android:layout_toRightOf="@id/sure"
+	        android:text="cancle"/>
+	    
+	</RelativeLayout>
+	
+</LinearLayout>
