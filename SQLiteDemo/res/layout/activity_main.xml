@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sqlitedemo.MainActivity" 
+    android:orientation="vertical">
+	
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/build"
+        android:text="建立"/>
+    
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/insert"
+        android:text="插入"/>
+    
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/update"
+        android:text="更新"/>
+    
+    
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/delete"
+        android:text="删除"/>
+    
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/find"
+        android:text="查找"/>
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+        <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:id="@+id/simple_display"
+        android:text="Simple"
+        android:layout_alignParentLeft="true"/>
+        
+        <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:id="@+id/array_display"
+        android:text="Array"
+        android:layout_centerInParent="true"/>
+        
+        <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:id="@+id/cursor_display"
+        android:text="Cursor"
+        android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/my_adapt"
+        android:text="MyAdapt"/>
+    
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/cnt"
+        android:text="显示个数"/>
+    
+    <Button 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:id="@+id/exist"
+        android:text="字段是否存在"/>
+    
+
+</LinearLayout>

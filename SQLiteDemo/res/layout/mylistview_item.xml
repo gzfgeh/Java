@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical">  
+    
+    <RelativeLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+       <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"/>
+    
+	   <TextView 
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:id="@+id/phone"
+	       android:textSize="20sp"
+	       android:layout_centerHorizontal="true"/>
+	   
+	   <TextView 
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:id="@+id/account"
+	       android:textSize="20sp"
+	       android:layout_alignParentRight="true"
+	       android:gravity="center"/>
+    </RelativeLayout>
+    
+	
+    <LinearLayout
+        android:id="@+id/hint_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:background="#808080">
+	   		<TextView 
+	   		    android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:textSize="24sp"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	   		    android:id="@+id/hint_text"/>               
+	        <ImageView
+	            android:id="@+id/image1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/ic_launcher"
+	            android:clickable="false"
+	            android:layout_weight="1"/>
+	        <ImageView
+	            android:id="@+id/image2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:clickable="false"
+	            android:src="@drawable/ic_launcher"/>
+    </LinearLayout>
+    
+</LinearLayout>
