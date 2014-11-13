@@ -38,8 +38,28 @@ public class ListServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		List<News> videos = service.getLastNews();
-		request.setAttribute("videos", videos);
-		request.getRequestDispatcher("/WEB-INF/page/videosnews.jsp").forward(request, response);
+		
+		String format = request.getParameter("format");
+//		if (format.equal("json")){
+			StringBuilder builder = new StringBuilder();
+			builder.append('[');
+			for (News news : videos) {
+				builder.append('{');
+				builder.append("id:").append(news.getId()).append(',');
+				builder.append("title:").append('\"').append(news.getTitle()).append("\",");
+				builder.append("timelength:").append(news.getTimelength());
+				builder.append("},");
+			}
+			builder.deleteCharAt(builder.length() - 1);
+			builder.append(']');
+			request.setAttribute("json", builder.toString());
+			request.getRequestDispatcher("/WEB-INF/page/jsonvideosnews.jsp").forward(request, response);
+			
+//		}else{
+//			request.setAttribute("videos", videos);
+//			request.getRequestDispatcher("/WEB-INF/page/videosnews.jsp").forward(request, response);
+//		
+//		}
 	}
 
 }
