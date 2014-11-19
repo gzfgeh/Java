@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SendDataToNet</string>
+    <string name="action_settings">Settings</string>
+    <string name="send_ok">发送数据成功</string>
+    <string name="send_fail">发送数据失败</string>
+    <string name="title">视频名称</string>
+    <string name="time">视频时长</string>
+ 	<string name="send">发送</string>
+ 	<string name="addr">传送地址</string>
+ 	<string name="filename">文件名称</string>
+ 	<string name="holdOn">请稍等</string>
+ 	<string name="nofile">文件不存在</string>
+	<string name="download">文件下载中.....</string>
+	
+</resources>

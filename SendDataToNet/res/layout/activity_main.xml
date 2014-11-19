@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/addr"
+        android:textSize="30dp"/>
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addr"/>
+    
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textSize="30dp"/>
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"/>
+    
+    
+	<TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/time"
+        android:textSize="30dp"/>
+	
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:numeric="integer"/>
+    
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/filename"
+        android:textSize="30dp"/>
+	
+    <EditText 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/filename"/>
+    
+    
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mode"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+    
+    	<RadioButton 
+    	    android:id="@+id/get"
+    	    android:text="GET"
+    	    android:checked="true"
+    	    android:layout_weight="1"/>
+    	
+    	<RadioButton 
+    	    android:id="@+id/post"
+    	    android:text="POST"
+    	    android:layout_weight="1"/>
+    	
+    	<RadioButton 
+    	    android:id="@+id/httpclient"
+    	    android:text="Client"
+    	    android:layout_weight="1"/>
+    	
+    	<RadioButton 
+    	    android:id="@+id/socket"
+    	    android:text="Socket"
+    	    android:layout_weight="1"/>
+    	
+    </RadioGroup>
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/send"
+        android:onClick="save"
+        android:id="@+id/send"/>
+    
+</LinearLayout>
