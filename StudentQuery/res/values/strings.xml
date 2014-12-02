@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StudentQuery</string>
+    <string name="action_settings">Settings</string>
+    <string name="input">请输入：</string>
+    <string name="query">查询</string>
+
+</resources>
